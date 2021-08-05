@@ -18,85 +18,89 @@ header {
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
-  padding-top: 5px;
+  padding-top: 10px;
   background: rgba(255, 255, 255, 0.876);
+  z-index: 1000;
+  /* ---------------- */
+  /* ---------------- */
+  /* ---------------- */
+  /* ---------------- */
+  /* ---------------- */
 }
 
 header .header-title img {
   height: 40px;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
-/* ---------------- */
-nav {
+header nav {
   margin: 0;
 }
 
-nav * {
+header nav * {
   margin: 0;
   padding: 0;
 }
 
-/* ---------------- */
-nav menuitem {
+header nav menuitem {
   position: relative;
   display: block;
   opacity: 0;
   cursor: pointer;
 }
 
-nav menuitem > menu {
+header nav menuitem > menu {
   position: absolute;
   pointer-events: none;
 }
 
-nav > menu {
+header nav > menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-nav > menu > menuitem {
+header nav > menu > menuitem {
   pointer-events: all;
   opacity: 1;
 }
 
-menu menuitem a {
+header menu menuitem a {
   white-space: nowrap;
   display: block;
 }
 
-menuitem:hover > menu {
+header menuitem:hover > menu {
   pointer-events: initial;
 }
 
-menuitem:hover > menu > menuitem,
-menu:hover > menuitem {
+header menuitem:hover > menu > menuitem,
+header menu:hover > menuitem {
   opacity: 1;
 }
 
-nav > menu > menuitem menuitem menu {
+header nav > menu > menuitem menuitem menu {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   top: 0;
   right: 0;
 }
 
-/* ---------------- */
-nav a {
+header nav a {
   background: white;
   border: solid 1px grey;
   color: black;
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
+  color: #1B443C;
   min-width: 100px;
   -webkit-transition: background 0.5s, color 0.5s, -webkit-transform 0.5s;
   transition: background 0.5s, color 0.5s, -webkit-transform 0.5s;
   transition: background 0.5s, color 0.5s, transform 0.5s;
   transition: background 0.5s, color 0.5s, transform 0.5s, -webkit-transform 0.5s;
   margin: 0px 6px 6px 0px;
-  padding: 8px 25px;
+  padding: 8px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
@@ -104,15 +108,25 @@ nav a {
   position: relative;
 }
 
-.menu-top {
+header .menu-top {
   text-align: center;
-  color: #1B443C;
   background: rgba(255, 255, 255, 0);
   border: none !important;
 }
 
-/* ---------------- */
-nav a:hover:before {
+header .menu-end {
+  font-size: 13px !important;
+  -webkit-transition: none;
+  transition: none;
+}
+
+header .select {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  color: #04a39b;
+}
+
+header nav a:hover:before {
   content: '';
   top: 0;
   left: 0;
@@ -122,30 +136,29 @@ nav a:hover:before {
   height: 100%;
 }
 
-nav > menu > menuitem > a + menu:after {
+header nav > menu > menuitem > a + menu:after {
   content: '';
   position: absolute;
   border: 7px solid transparent;
   border-top: 7px solid #04a39b;
-  left: 5px;
+  left: 0px;
   top: -30px;
 }
 
-nav menuitem > menu > menuitem > a + menu:after {
+header nav menuitem > menu > menuitem > a + menu:after {
   content: '';
   position: absolute;
   border: 7px solid transparent;
   border-left: 7px solid #04a39b;
   top: 15px;
-  left: -110px;
+  left: -20px;
   -webkit-transition: opacity 0.5s, -webkit-transform 0s;
   transition: opacity 0.5s, -webkit-transform 0s;
   transition: opacity 0.5s, transform 0s;
   transition: opacity 0.5s, transform 0s, -webkit-transform 0s;
 }
 
-/* ---------------- */
-nav > menu > menuitem > menu > menuitem {
+header nav > menu > menuitem > menu > menuitem {
   -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
@@ -155,14 +168,14 @@ nav > menu > menuitem > menu > menuitem {
   opacity: 0;
 }
 
-nav > menu > menuitem:hover > menu > menuitem,
-nav > menu > menuitem.hover > menu > menuitem {
+header nav > menu > menuitem:hover > menu > menuitem,
+header nav > menu > menuitem.hover > menu > menuitem {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   opacity: 1;
 }
 
-menuitem > menu > menuitem > menu > menuitem {
+header menuitem > menu > menuitem > menu > menuitem {
   -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
@@ -172,16 +185,10 @@ menuitem > menu > menuitem > menu > menuitem {
   opacity: 0;
 }
 
-menuitem > menu > menuitem:hover > menu > menuitem,
-menuitem > menu > menuitem.hover > menu > menuitem {
+header menuitem > menu > menuitem:hover > menu > menuitem,
+header menuitem > menu > menuitem.hover > menu > menuitem {
   -webkit-transform: translateX(0) translateY(0%);
           transform: translateX(0) translateY(0%);
   opacity: 1;
-}
-
-.content {
-  background: red;
-  height: 150vh;
-  width: 100vw;
 }
 /*# sourceMappingURL=header.css.map */

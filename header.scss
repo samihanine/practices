@@ -15,17 +15,17 @@ header {
    display: flex;
    align-items: center;
    width: 100vw;
-   padding-top: 5px;
+   padding-top: 10px;
    background: rgba(255, 255, 255, 0.876);
-
+   z-index: 1000;
 
 
    .header-title img {
       height: 40px;
-      margin: 0 10px;
+      margin: 0 15px;
    }
    
-}
+
 
 /* ---------------- */
 nav {
@@ -86,13 +86,14 @@ nav a {
    border: solid 1px grey;
    color: black;
    text-transform: capitalize;
-   font-size: 18px;
+   font-size: 16px;
    text-decoration: none;
+   color: #1B443C;
 
    min-width: 100px;
    transition: background 0.5s, color 0.5s, transform 0.5s;
    margin: 0px 6px 6px 0px;
-   padding: 8px 25px;
+   padding: 8px 20px;
    box-sizing: border-box;
    border-radius: 3px;
    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); */
@@ -102,11 +103,22 @@ nav a {
 
 .menu-top {
    text-align: center;
-   color: #1B443C;
+
+   
    background: rgba(255, 255, 255, 0);
    border: none !important;
 }
 
+.menu-end {
+   font-size: 13px !important;
+   transition: none;
+}
+
+.select {
+   text-decoration: underline;
+   text-underline-offset: 6px;
+   color: #04a39b;
+}
 /* ---------------- */
 nav a:hover:before {
    content: '';
@@ -126,7 +138,7 @@ nav>menu>menuitem>a+menu:after {
    position: absolute;
    border: $a solid transparent;
    border-top: $a solid #04a39b;
-   left: 5px;
+   left: 0px;
    top: -30px;
 }
 
@@ -137,7 +149,7 @@ nav menuitem>menu>menuitem>a+menu:after {
    border: $a solid transparent;
    border-left: $a solid #04a39b;
    top: 15px;
-   left: -110px;
+   left: -20px;
    transition: opacity $time, transform 0s;
 }
 
@@ -166,8 +178,5 @@ menuitem>menu>menuitem.hover>menu>menuitem {
    opacity: 1;
 }
 
-.content {
-   background: red;
-   height: 150vh;
-   width: 100vw;
 }
+

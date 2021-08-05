@@ -7,7 +7,7 @@ body {
 }
 
 .background {
-  margin-top: 51px;
+  margin-top: 55px;
   background-image: url("background.jpg");
   background-size: 100%;
   background-attachment: fixed;
@@ -15,7 +15,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
-  height: calc(100vh - 140px);
+  height: calc(100vh - 100px);
   margin-bottom: 70px;
 }
 
@@ -155,7 +155,7 @@ h2 {
 }
 
 .contact-container a:hover {
-  background-color: #2bcfc7;
+  background-color: #04a39ba2;
 }
 
 /* --------------- */

@@ -1,6 +1,47 @@
 /* -------- */
+.path {
+  margin-top: 55px;
+  width: 100vw;
+  height: 30px;
+  background-color: #04A39B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.path ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+}
+
+.path ul li {
+  color: white;
+  font-weight: 900;
+  list-style: none;
+  margin-right: 10px;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.path ul li img {
+  height: 20px;
+}
+
 .body {
-  margin-top: 100px;
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,22 +50,55 @@
 }
 
 .body-link {
+  position: fixed;
+  width: 400px;
   min-width: 400px;
-  height: 500px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: white;
   border: solid 2px #04A39B;
+  margin: 0 30px;
+  padding: 0px 15px 0 0;
+}
+
+.body-link menu {
+  padding: 0 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: justify;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 10px;
+}
+
+.body-link menuitem a {
+  text-decoration: none;
+  color: #153730;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .body-text {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0 60px;
+  padding: 0 30px;
   text-align: justify;
+  padding-left: 500px;
 }
 
 .body-section {
-  border: solid 1px grey;
+  border: solid 2px #04A39B;
+  border-radius: 5px;
   margin: 20px 0;
 }
 
@@ -52,6 +126,7 @@
 .body-section-title img {
   fill: white;
   height: 20px;
+  margin-right: 5px;
 }
 
 .body-section-text {
