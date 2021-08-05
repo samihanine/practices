@@ -7,28 +7,93 @@
     <title>Practice</title>
     <link href="index.css" rel="stylesheet">
 
+    <link href="prestation.css" rel="stylesheet">
+
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link href="header.css" rel="stylesheet">
     
 </head>
 <body>
 
     <header>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="#">Procédés</a></li>
-            <li><a class="select" href="prestation.html">Prestation</a></li>
+        <div class="header-title">
+            <img src="https://laboratoiresbio7.fr/wp-content/uploads/2021/05/61792-ai-e1621346555364.png" alt="icon practices" />
+        </div>
 
-            <div class="header-title">
-                <img src="https://laboratoiresbio7.fr/wp-content/uploads/2021/05/61792-ai-e1621346555364.png" alt="icon practices" />
-            </div>
+        <nav>
+            <menu>
+                <menuitem><a href="index.html" class="menu-top">Accueil</a></menuitem>
+                <menuitem><a class="menu-top">Procédés</a></menuitem>
+                <menuitem>
+                <a href="prestation.html" class="menu-top">Prestations</a>
+                <menu>
+                    <menuitem><a>about</a></menuitem>
+                    <menuitem>
+                    <a>settings</a>
+                    <menu>
+                        <menuitem><a>Test 1</a></menuitem>
+                        <menuitem><a>Test 2</a></menuitem>
+                        <menuitem><a>Test 3</a></menuitem>
+                        <menuitem><a>Test 4</a></menuitem>
+                    </menu>
+                    </menuitem>
+                    <menuitem><a>help</a></menuitem>
+                    <menuitem>
+                    <a>more</a>
+                    <menu>
+                        <menuitem>
+                        <a>deeper</a>
+                        <menu>
+                            <menuitem><a>deep 1eep 1 eep 1eep 1eep 1 eep 1</a></menuitem>
+                            <menuitem><a>deep 2</a></menuitem>
+                            <menuitem><a>deep 3</a></menuitem>
+                        </menu>
+                        </menuitem>
+                        <menuitem><a>test</a></menuitem>
+                    </menu>
+                    </menuitem>
+                </menu>
+                </menuitem>
 
-            <li><a href="#">Références</a></li>
-            <li><a href="#">Tarifs & CGV</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+                <menuitem><a class="menu-top">Références</a></menuitem>
+                <menuitem>
+                <a class="menu-top">Tarifs & CGV</a>
+                <menu>
+                    <menuitem><a>about</a></menuitem>
+                    <menuitem>
+                    <a>settings</a>
+                    <menu>
+                        <menuitem><a>Test 1</a></menuitem>
+                        <menuitem><a>Test 2</a></menuitem>
+                        <menuitem><a>Test 3</a></menuitem>
+                        <menuitem><a>Test 4</a></menuitem>
+                    </menu>
+                    </menuitem>
+                    <menuitem><a>help</a></menuitem>
+                    <menuitem>
+                    <a>more</a>
+                    <menu>
+                        <menuitem>
+                        <a>deeper</a>
+                        <menu>
+                            <menuitem><a>deep 1eep 1 eep 1eep 1eep 1 eep 1</a></menuitem>
+                            <menuitem><a>deep 2</a></menuitem>
+                            <menuitem><a>deep 3</a></menuitem>
+                        </menu>
+                        </menuitem>
+                        <menuitem><a>test</a></menuitem>
+                    </menu>
+                    </menuitem>
+                </menu>
+                </menuitem>
+                <menuitem><a class="menu-top">Contact</a></menuitem>
+            </menu>
+        </nav>
+
     </header>
 
 
@@ -92,11 +157,9 @@
     for(let i=0; i<containers.length; i++){
         let container = containers[i];
         let title = container.children[0];
-        let text = container.children[1];
 
         title.onclick = () => {
-            container.style.backgroundColor = title.classList.contains("show") ? title.classList.remove("show") : title.classList.add("show");
-            text.style.display = text.style.display !== "flex" ? "flex" : "none";
+            container.style.backgroundColor = container.classList.contains("show") ? container.classList.remove("show") : container.classList.add("show");
         }
     }
 </script>

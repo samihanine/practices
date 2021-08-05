@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html,
+body {
+   padding: 0px;
+   margin: 0px;
+   background: white;
+   font-family: 'Open Sans', sans-serif;
+   width: 100vw;
+}
+
+header {
+   position: fixed;
+   top: 0px;
+   display: flex;
+   align-items: center;
+   width: 100vw;
+   padding-top: 5px;
+   background: rgba(255, 255, 255, 0.876);
+
+
+
+   .header-title img {
+      height: 40px;
+      margin: 0 10px;
+   }
+   
+}
+
+/* ---------------- */
+nav {
+   margin: 0;
+}
+
+nav * {
+   margin: 0;
+   padding: 0;
+}
+
+/* ---------------- */
+nav menuitem {
+   position: relative;
+   display: block;
+   opacity: 0;
+   cursor: pointer;
+}
+
+nav menuitem>menu {
+   position: absolute;
+   pointer-events: none;
+}
+
+nav>menu {
+   display: flex;
+}
+
+nav>menu>menuitem {
+   pointer-events: all;
+   opacity: 1;
+}
+
+menu menuitem a {
+   white-space: nowrap;
+   display: block;
+}
+
+menuitem:hover>menu {
+   pointer-events: initial;
+}
+
+menuitem:hover>menu>menuitem,
+menu:hover>menuitem {
+   opacity: 1;
+}
+
+nav>menu>menuitem menuitem menu {
+   transform: translateX(100%);
+   top: 0;
+   right: 0;
+}
+
+
+/* ---------------- */
+nav a {
+   background: white;
+   border: solid 1px grey;
+   color: black;
+   text-transform: capitalize;
+   font-size: 18px;
+   text-decoration: none;
+
+   min-width: 100px;
+   transition: background 0.5s, color 0.5s, transform 0.5s;
+   margin: 0px 6px 6px 0px;
+   padding: 8px 25px;
+   box-sizing: border-box;
+   border-radius: 3px;
+   /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); */
+   
+   position: relative;
+}
+
+.menu-top {
+   text-align: center;
+   color: #1B443C;
+   background: rgba(255, 255, 255, 0);
+   border: none !important;
+}
+
+/* ---------------- */
+nav a:hover:before {
+   content: '';
+   top: 0;
+   left: 0;
+   position: absolute;
+   background: rgba(0, 0, 0, 0.2);
+   width: 100%;
+   height: 100%;
+}
+
+$a: 7px;
+$b: 20px;
+
+nav>menu>menuitem>a+menu:after {
+   content: '';
+   position: absolute;
+   border: $a solid transparent;
+   border-top: $a solid #04a39b;
+   left: 5px;
+   top: -30px;
+}
+
+$time: 0.5s;
+nav menuitem>menu>menuitem>a+menu:after {
+   content: '';
+   position: absolute;
+   border: $a solid transparent;
+   border-left: $a solid #04a39b;
+   top: 15px;
+   left: -110px;
+   transition: opacity $time, transform 0s;
+}
+
+/* ---------------- */
+nav>menu>menuitem>menu>menuitem {
+   transition: transform $time, opacity $time;
+   transform: translateY(150%);
+   opacity: 0;
+}
+
+nav>menu>menuitem:hover>menu>menuitem,
+nav>menu>menuitem.hover>menu>menuitem {
+   transform: translateY(0%);
+   opacity: 1;
+}
+
+menuitem>menu>menuitem>menu>menuitem {
+   transition: transform $time, opacity $time;
+   transform: translateX(195px) translateY(0%);
+   opacity: 0;
+}
+
+menuitem>menu>menuitem:hover>menu>menuitem,
+menuitem>menu>menuitem.hover>menu>menuitem {
+   transform: translateX(0) translateY(0%);
+   opacity: 1;
+}
+
+.content {
+   background: red;
+   height: 150vh;
+   width: 100vw;
+}

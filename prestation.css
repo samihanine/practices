@@ -1,0 +1,72 @@
+/* -------- */
+.body {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  min-height: 100vh;
+}
+
+.body-link {
+  min-width: 400px;
+  height: 500px;
+  background-color: white;
+  border: solid 2px #04A39B;
+}
+
+.body-text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 60px;
+  text-align: justify;
+}
+
+.body-section {
+  border: solid 1px grey;
+  margin: 20px 0;
+}
+
+.body-section-title {
+  background-color: #04A39B;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body-section-title h3 {
+  margin: 0;
+  padding: 5px;
+}
+
+.body-section-title img {
+  fill: white;
+  height: 20px;
+}
+
+.body-section-text {
+  display: none;
+  padding: 10px;
+}
+
+.body .show .body-section-title img {
+  -webkit-transform: rotate(0.5turn);
+          transform: rotate(0.5turn);
+}
+
+.body .show .body-section-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=prestation.css.map */

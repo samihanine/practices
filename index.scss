@@ -10,7 +10,7 @@ body {
 }
 
 .background {
-    margin-top: 70px;
+    margin-top: 51px;
 
     background-image: url("background.jpg");
     background-size: 100%;
@@ -26,82 +26,6 @@ body {
     
 }
 
-header {
-    height: 70px;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.548);
-    width: 100vw;
-    position: fixed;
-    z-index: 100;
-
-    ul {
-        display: flex;
-        align-items: center;
-        
-
-    
-        li {
-            margin: 0 10px;
-            
-            list-style: none;
-            height: 70px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            a {
-
-                display: flex;
-                justify-content: center; /* align horizontal */
-                align-items: center;
-
-                color: #1B443C;
-                font-size: 18px;
-                text-decoration: none;
-
-                font-weight: 900;
-                padding: 0px 5px;
-                height: 35px;
-                
-                &:hover {
-                    color: #04A39B;
-                }
-            }
-            .select {
-                color: #04A39B;
-                padding-top: 2px;
-    
-      
-                border-bottom: solid 2px #04A39B;
-            }
-
-        }
-    
-    }
-
-}
-
-.header-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 10px;
-
-    
-}
-.header-title h1 {
-    font-size: 12px;
-    align-items: center;
-    text-align: center;
-}
-
-.header-title img {
-    height: 70px;
-}
 
 footer {
     background-color: #211A21;
@@ -134,6 +58,8 @@ h2 {
         flex-direction: column;
         width: 100vw;
         color: #1B443C;
+
+        
 
         p {
             width: 70vw;
@@ -220,69 +146,3 @@ h2 {
 
 
 /* --------------- */
-
-.body {
-    margin-top: 70px;
-    display: flex;
-    padding: 10px;
-    min-height: 100vh;
-
-    &-link {
-        min-width: 400px;
-        height: 500px;
-        background-color: white;
-        border: solid 2px #04A39B;
-    }
-    
-    &-text {
-        width:fit-content;
-        padding: 0 60px;
-        text-align: justify;
-    }
-
-    &-section {
-        border: solid 1px grey;
-        margin: 20px 0;
-
-
-        &-title {
-
-            background-color: #04A39B;
-            color: white;
-            cursor: pointer;
-            padding: 10px;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            h3 {
-                margin: 0;
-                padding: 5px;
-            }
-
-            img {
-                fill: white;
-                height: 20px;
-            }
-        }
-
-        .show {
-
-            &-title {
-                img {
-                    transform: rotate(0.5turn);
-                }
-            }
-
-
-        } 
-
-        &-text {
-            display: none;
-            padding: 10px;
-        }
-    }
-}
-
-
