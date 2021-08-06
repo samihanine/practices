@@ -53,17 +53,13 @@
   position: fixed;
   width: 400px;
   min-width: 400px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: white;
-  border: solid 2px #04A39B;
   margin: 0 30px;
-  padding: 0px 15px 0 0;
+  background-color: #04a39b05;
+  border: solid 2px #1B443C;
 }
 
 .body-link menu {
-  padding: 0 0;
+  padding: 0;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,18 +69,59 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: justify;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 10px;
+}
+
+.body-link menuitem {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .body-link menuitem a {
   text-decoration: none;
-  color: #153730;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  color: #1B443C;
+  padding: 5px 5px;
+  font-weight: 900;
+}
+
+.body-link .m1 {
+  font-size: 18px;
+}
+
+.body-link .m1 > a {
+  background: #1B443C;
+  color: white;
+}
+
+.body-link .m2 {
+  border-top: solid 2px #1B443C;
+  font-size: 16px;
+}
+
+.body-link .m3 {
+  border-top: solid 2px #1B443C;
+  font-size: 15px;
+}
+
+.body-link .m3 > a {
+  padding-left: 15px;
+}
+
+.body-link .m4 {
+  font-size: 13px;
+}
+
+.body-link .m4 > a {
+  padding-left: 30px;
+}
+
+.body-link .select {
+  color: #04A39B;
 }
 
 .body-text {
@@ -93,7 +130,12 @@
   width: fit-content;
   padding: 0 30px;
   text-align: justify;
-  padding-left: 500px;
+  padding-left: 480px;
+}
+
+.body-text > h3 {
+  font-size: 25px;
+  color: #04A39B;
 }
 
 .body-section {

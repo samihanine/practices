@@ -40,37 +40,63 @@
         position: fixed;
         width: 400px;
         min-width: 400px;
-        height: fit-content;
-        background-color: white;
-        border: solid 2px #04A39B;
         margin: 0 30px;
 
-        padding: 0px 15px 0 0;
+        background-color: #04a39b05;
+        border: solid 2px #1B443C;
+        
 
         menu {
-
-            
-            padding: 0 0;
-
+            padding: 0;
             margin: 0;
             display: flex;
             flex-direction: column;
             text-align: justify;
-
-            height: fit-content;
-            margin: 10px;
-            
-
         }
 
+        menuitem {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            a {
+                text-decoration: none;
+                color: #1B443C;
+                padding: 5px 5px;
+                font-weight: 900;
+            }
+        }
 
-        menuitem a {
+        .m1 {
+            font-size: 18px;
+            & > a {
+                background: #1B443C;
+                color: white;
+            }
+        }
+        .m2 {
+            border-top: solid 2px #1B443C;
+            font-size: 16px;
+        }
+        .m3 {
+            border-top: solid 2px #1B443C;
+            font-size: 15px;
             
-            text-decoration: none;
-            color: #153730;
+            & > a {
+                padding-left: 15px;
+            }
+        }
 
+        .m4 {
+            font-size: 13px;
+            & > a {
+                
+                padding-left: 30px;
+            }
+        }
+
+        .select {
+            color: #04A39B;
             
-            width: max-content;
         }
     }
     
@@ -78,7 +104,12 @@
         width:fit-content;
         padding: 0 30px;
         text-align: justify;
-        padding-left: 500px;
+        padding-left: 480px;
+
+        & > h3 {
+            font-size: 25px;
+            color: #04A39B;
+        }
     }
 
     &-section {
@@ -94,6 +125,7 @@
             color: white;
             cursor: pointer;
             padding: 5px;
+            
 
 
             display: flex;
