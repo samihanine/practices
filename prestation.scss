@@ -43,7 +43,7 @@
         margin: 0 30px;
 
         background-color: #04a39b05;
-        border: solid 2px #1B443C;
+        border: solid 2px #04A39B;
         
 
         menu {
@@ -60,7 +60,7 @@
             flex-direction: column;
             a {
                 text-decoration: none;
-                color: #1B443C;
+                color: #04A39B;
                 padding: 5px 5px;
                 font-weight: 900;
             }
@@ -69,16 +69,16 @@
         .m1 {
             font-size: 18px;
             & > a {
-                background: #1B443C;
+                background: #04A39B;
                 color: white;
             }
         }
         .m2 {
-            border-top: solid 2px #1B443C;
+            border-top: solid 2px #04A39B;
             font-size: 16px;
         }
         .m3 {
-            border-top: solid 2px #1B443C;
+            border-top: solid 2px #04A39B;
             font-size: 15px;
             
             & > a {
